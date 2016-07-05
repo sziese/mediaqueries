@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Meta Queries in CSS</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+
+  <div class="main">
+
+  <h1>Media Types & Media Queries in CSS</h1>
+  <div class="images"><img src="image/responsive-web-design.jpg" alt="webdesign" class="image1"></div>
+<h2>MEDIATYPEN</h2><br>
+<p class="rosa">DEFINITION</p>
+  <p>Mediatypen werden zur Abfragen von Eigenschaften und Fähigkeiten von Ausgabegeräten genutzt. Sie können an allen Stellen verwendet werden, wo Stylesheets eingebunden werden bzw. dort, wo eine Medienangabe abgefragt wird. Erfüllt das verwendete Ausgabemedium alle Kriterien einer Medienabfrage, so wird das damit verknüpfte Stylesheet eingebunden.<br>
+    <h3>Die Angabe eines Medientyps erfolgt als einfaches Schlüsselwort, z.B. screen.</h3>
+<br>
+  <h2>Übersicht der Medientypen</h2>
+  <div class="box1">
+  <p><b>all</b><br>
+  <br>  <b>print</b><br>
+    <b>screen</b><br>
+    <b>speech</b><br><br><br>	</p>
+  </div><div class="box2"><p>Standardwert für alle Ausgabemedien. Ist keine Medienabfrage angegeben oder besteht die angegebene Abfrage nur aus Leerzeichen, so gilt der Standardwert "all".<br>
+  für Drucker, die Inhalte sichtbar auf Papier drucken.	<br>
+  (Computer-)Bildschirme<br>
+  für Sprachsynthesizer gedacht. Die Angabe ist für ein zukünftiges CSS-Modul reserviert und wird bisher (Stand September 2014) nicht verwendet, soll aber den Medientyp „aural“ ersetzen.</p></div>
+  <p>  Beispiel:<br>  <div class="images"><img src="image/bsp.jpg" alt="webdesign" class="image2"></div>
+
+<br><br>
+    <h2>MEDIAQUERIES</h2>
+<br>
+    <p class="rosa">DEFINITION</p><p>Media Queries sind Media Types <b>mit mindestens einem</b> weiteren Ausdruck. Anstatt nach einem bestimmten Medium zu schauen, kann man mit Media Queries die Eigenschaften und Fähigkeiten von Ausgabemedien abfragen. Damit kann der CSS-Code ganz gezielt für bestimmte Situation geschrieben werden. Es kann abgefragt werden, ob ein Anwender ein Smart Phone oder einen PC-Monitor bedient und dann ein passendes Layout liefern. Aber es können noch weitere  Eigenschaften abgefragt werden.
+      <h3>Media Queries sind logische Ausdrücke, die die Angabe von Medientypen und bestimmten Medienmerkmalen miteinander verknüpfen.</h3><br>
+        <div class="images"><img src="image/tab.jpg" alt="tabelle" class="image3"></div>
+
+
+<p class="rosa">FUNKTIONEN</p>
+<ol>
+<li>Gezieltes CSS-Code-Schreiben für bestimmte Situationen maßgeschneiderte Präsentation von Inhalten, je nach Ausgabegerät (ohne den Inhalt selbst zu verändern)
+<li>Media Queries sind Weiterentwicklungen der Media Types</li>
+<li>Media Queries unterstützen z.B. full-browser backgrounds  auf unterschiedlichen Geräten</li></ol>
+
+
+
+
+<p>  Beispiel:<br> </p>
+<div class="images"><img src="image/querie.jpg" alt="querie" class="image4"></div>
+<br>
+<h2>Eigenschaften der Media Queries:</h2>
+<p>Eigenschaften können mit den Präfixen "min-" und "max-" ergänzt werden. Dadurch ist es beispielsweise möglich, mit dem Eintrag die minimal zugelassene Breite zu setzen und kann damit Webseiten für unterschiedlich große Bildschirme/Browserfenster optimieren. Webautoren können auf dies reagieren und ein Spaltenlayout auflösen, wenn die Breite für die mehrspaltige Darstellung nicht mehr ausreicht.
+
+</p>
+
+	<ul>
+    <li>min-/max-width: <b>Breite des Browserfensters</b></li>
+	<li>min-/max-height: <b>Höhe des Browserfensters</b></li>
+	<li>min-/max-device-width:<b> Bildschirmbreite</b></li>
+	<li>min-/max-device-height: <b>Bildschirmhöhe</b></li>
+	<li>orientation: <b>Ausrichtung (portrait/landscape)</b></li>
+	<li>min-/max-aspect-ratio: <b>Seitenverhältnis des Browserfensters </b>(z.B. 16/9 oder 1280/720)</li>
+	<li>min-/max-device-aspect-ratio: <b>Seitenverhältnis des Bildschirmes</b></li>
+	<li>min-/max-color:<b> Bits pro Farbkomponente auf dem Ausgabebildschirm </b>(beispielsweise @media all and (min-color: 1)</li>
+	<li>min-/max-color-index:<b> Anzahl der Einträge in der Farbtabelle des Gerätes</b></li>
+	<li>min-/max-monochrome:<b> Anzahl der Bits pro Pixel des monochromatischen Bildschirmes</b></li>
+	<li>min-/max-resolution:<b> Auflösung des Bildschirmes</b></li>
+	<li>scan:<b> Abtastart des Ausgabebildschirmes</b>, progressive / interlaced (beispielsweise @media tv and (scan: progressive)</li>
+	<li>grid:<b> Unterscheidet, ob der Ausgabebilschirm "grid" oder "bitmap" benutzt. </b>Terminals oder Telefonbildschirme mit nur einer Schriftart sind beispielsweise grid-basierend.</li>
+</ul>
+
+<div class="images"><img src="image/lalmalani_fig01.gif" alt="image4" class="image1"></div>
+
+
+<p class="rosa">VORTEILE</p>
+<p>Der Vorteil an Media Queries ist, dass fast alle relevanten aktuellen Browser die CSS-Angaben korrekt ausführen. Da aber insbesondere ältere Browser-Versionen Media Queries nicht verstehen können, gibt es eine JavaScript-Ergänzung, sodass das gewünschte Ergebnis erreicht werden kann.</p>
+
+</div>
+</body>
+</html>
